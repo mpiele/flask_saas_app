@@ -3,29 +3,44 @@ body, html {
     display: flex;
     justify-content: center;
     align-items: center; /* Ensure vertical centering */
-    border: 5px solid red;
     flex-direction: column; /* Default to column layout */
     height: 100vh; /* Full viewport height for vertical centering */
+
+    background-color: #1d1d1d;
+}
+
+#info_text {
+    font-size: 5vw;
+    font-family: "Lucida Console", "Courier New", monospace;
+    color: aliceblue;
+}
+
+#website_title {
+    font-size: 8.09vw;
+    font-family: "Lucida Console", "Courier New", monospace;
+    color: aliceblue;
 }
 
 #main_div {
-    border: 5px solid red;
     display: inline-flex;
     max-width: 75%;
     justify-content: center;
     align-items: center;
     flex-direction: column; /* Stack content vertically */
+    gap: 5%;
 }
 
 #example_post_image {
     max-width: 100%;
     max-height: 100%;
     object-fit: contain;
+
+    box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.4);
 }
 
 @media (min-width: 900px) { /* Replace 600px with your desired screen width 'x' */
     body, html {
-        flex-direction: row; /* Switch to row layout on larger screens */
+        flex-direction: column; /* Switch to row layout on larger screens */
     }
     
     #main_div {
@@ -35,5 +50,13 @@ body, html {
     #example_post_image {
         max-height: 75%;
         max-width: 75%;
+    }
+
+    #info_text {
+        font-size: 3vw;
+    }
+
+    #website_title {
+        font-size: 4.854vw;
     }
 }
