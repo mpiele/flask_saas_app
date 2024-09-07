@@ -18,8 +18,8 @@ body, html {
 }
 
 #example_post_image {
-    max-width: 75%;
-    max-height: 75%;
+    max-width: 100%;
+    max-height: 100%;
     object-fit: contain;
 }
 
@@ -30,5 +30,10 @@ body, html {
     
     #main_div {
         flex-direction: row; /* Display content side by side */
+    }
+    
+    #example_post_image {
+        max-height: 75%;
+        max-width: 75%;
     }
 }
